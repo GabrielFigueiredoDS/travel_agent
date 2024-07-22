@@ -1,3 +1,4 @@
+# Imports
 import streamlit as st
 import openai
 from langchain.chains import LLMChain
@@ -37,7 +38,7 @@ days = st.number_input("Quantos dias pretende ficar?", min_value=1, max_value=30
 # Entrada do usuário - Itinerário específico
 itinerary_request = st.text_input("Tem algo específico que você gostaria de saber sobre o itinerário ou dicas? - Por exemplo: Praias, Restaurantes...")
 
-# Botão
+# Gerar Saída
 if st.button("Gerar Itinerário e Dicas"):
     if destination and days:
         if itinerary_request:

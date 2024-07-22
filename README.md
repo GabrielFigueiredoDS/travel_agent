@@ -1,6 +1,6 @@
 # Projeto INFNET
 
-1. Descrição da Aplicação e Objetivos Principais do Projeto
+### 1. Descrição da Aplicação e Objetivos Principais do Projeto
 Aplicação: AgenTravel - Seu Agente de Viagem Virtual
 
 Descrição:
@@ -11,12 +11,14 @@ Objetivos Principais:
 Facilitar o planejamento de viagens: Fornecer aos usuários informações detalhadas e organizadas sobre destinos turísticos, ajudando-os a planejar suas viagens de forma eficiente.
 Melhorar a experiência do usuário: Oferecer uma interface simples e intuitiva para que qualquer pessoa possa obter rapidamente as informações necessárias para sua viagem.
 Integração de compartilhamento: Permitir que os usuários compartilhem facilmente o plano de viagem via e-mail ou WhatsApp.
-2. Arquitetura do Aplicativo
+
+### 2. Arquitetura do Aplicativo
 Arquitetura do Aplicativo:
 
 Frontend: Streamlit
 
 Streamlit é utilizado para criar a interface web interativa do AgenTravel. Ele permite a criação rápida de aplicativos web utilizando Python, oferecendo uma experiência de usuário responsiva e interativa.
+
 Componentes de entrada:
 Text Input para o destino da viagem.
 Number Input para a quantidade de dias da viagem.
@@ -29,9 +31,12 @@ Links para compartilhar a resposta por e-mail ou WhatsApp.
 Backend: LangChain e OpenAI
 
 LangChain é utilizado para gerenciar e estruturar as chamadas ao modelo de linguagem da OpenAI (GPT-3.5/GPT-4). Ele facilita a integração do LLM e a criação de fluxos de trabalho baseados em linguagem natural.
+
 PromptTemplate: Define o template do prompt que será enviado ao modelo de linguagem, incluindo variáveis como destino e dias de viagem.
+
 LLMChain: Utiliza o PromptTemplate e o modelo de linguagem da OpenAI para gerar respostas baseadas nos prompts fornecidos pelos usuários.
 OpenAI: O modelo de linguagem da OpenAI é responsável por processar os prompts e retornar respostas detalhadas. A API da OpenAI é configurada utilizando a chave de API carregada de um arquivo .env para segurança.
+
 Fluxo de Trabalho:
 
 Entrada do Usuário: O usuário insere o destino da viagem, a quantidade de dias e, opcionalmente, solicita informações específicas sobre o itinerário.

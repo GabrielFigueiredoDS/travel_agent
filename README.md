@@ -18,8 +18,4 @@ Utilizado para criar a interface web interativa do AgenTravel. Ele permite a cri
 * LangChain
 LangChain foi Utilizado o PromptTemplate da para criar templates de prompts que são personalizados com base na entrada do usuário e LLMChain para gerenciar a execução do modelo de linguagem onde ele recebe o prompt e enviar para modelo da OpenAI.
 
-PromptTemplate: Define o template do prompt que será enviado ao modelo de linguagem, incluindo variáveis como destino e dias de viagem.
-LLMChain: Utiliza o PromptTemplate e o modelo de linguagem da OpenAI para gerar respostas baseadas nos prompts fornecidos pelos usuários.
-OpenAI: O modelo de linguagem da OpenAI é responsável por processar os prompts e retornar respostas detalhadas. A API da OpenAI é configurada utilizando a chave de API carregada de um arquivo .env para segurança.
-
 4. Essa arquitetura permite a criação de uma aplicação interativa e eficiente que auxilia no planejamento de viagens, utilizando as capacidades avançadas de linguagem natural da OpenAI e a interface amigável do Streamlit.
